@@ -6,10 +6,15 @@
 }
 body {
     background-color: #222;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:
 }
 .card {
-    width: 90%;
-    max-width: 470px;
+   width: 100%;
+    max-width: 400px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
     margin: 100px auto 0;
@@ -89,4 +94,54 @@ body {
     font-size: 14px;
     margin-top: 10px;
    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Make the card full width on smaller screens */
+        padding: 15px;
+    }
+    
+    .search input, .search button {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .temp {
+        font-size: 2.5rem;
+    }
+
+    .city {
+        font-size: 1.3rem;
+    }
+    
+    .details .col img {
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        padding: 10px;
+    }
+    
+    .temp {
+        font-size: 2rem;
+    }
+
+    .city {
+        font-size: 1.2rem;
+    }
+
+    .details .col img {
+        width: 25px;
+    }
+
+    .search input {
+        padding: 6px;
+    }
+
+    .search button {
+        padding: 6px;
+        margin-left: 5px;
+    }
 }
